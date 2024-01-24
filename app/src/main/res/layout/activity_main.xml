@@ -27,8 +27,8 @@
 
             <Button
                 android:id="@+id/CadBairro"
-                android:layout_width="175dp"
-                android:layout_height="match_parent"
+                android:layout_width="385dp"
+                android:layout_height="122dp"
                 android:layout_weight="1"
                 android:text="Cadastrar Bairro" />
 

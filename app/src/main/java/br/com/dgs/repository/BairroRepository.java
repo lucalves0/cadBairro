@@ -31,7 +31,7 @@ public class BairroRepository implements IPadraoRepository {
 
     @Override
     public void inserir(Object o) {
-        Bairro bairro = (Bairro) o;
+        Bairro bairro = (Bairro)o;
         long codigo = -1;
         db.beginTransaction();
         try {
@@ -91,7 +91,7 @@ public class BairroRepository implements IPadraoRepository {
 
     @Override
     public ArrayList getAll() {
-        List<Bairro> lista = new ArrayList<>();
+        List<Bairro> lista = new ArrayList<Bairro>();
         Cursor c = db.query(DB.TBL_BAIRRO, null, null, null, null, null, null);
         c.moveToFirst();
         while (!c.isAfterLast()){

@@ -29,25 +29,21 @@ public class CadBairroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cad_bairro);
-
         edId = findViewById(R.id.edtIdBairroCad);
         edNome = findViewById(R.id.edtNomeBairroCad);
         edUf = findViewById(R.id.edtUfBairroCad);
-
         btnSalvar = findViewById(R.id.btnSalvarBairroCad);
         btnCancelar = findViewById(R.id.btnCancelarBairroCad);
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("Id", edId.getText().toString());
-                Log.e("Nome", edNome.getText().toString());
-
+                Log.e("Id:", edId.getText().toString());
+                Log.e("Nome:", edNome.getText().toString());
                 Bairro bairro = new Bairro();
                 bairro.setId(edId.getText().toString());
                 bairro.setNome(edNome.getText().toString());
                 bairro.setUf(edUf.getText().toString());
-
                 BairroRepository bairroRepository = BairroRepository.getInstance(CadBairroActivity.this);
                 if(tagForm == TagForm.I){
                     bairroRepository.inserir(bairro);

@@ -42,10 +42,9 @@ public class ListBairroActivity extends AppCompatActivity {
                 AlertDialog alerta;
                 AlertDialog.Builder builder = new AlertDialog.Builder(ListBairroActivity.this);
                 builder.setTitle("Cadastro de Bairro");
-                builder.setMessage("Selecione uma opção");
+                builder.setMessage("Selecione uma opção!");
                 builder.setPositiveButton("Alterar".toString(), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                    public void onClick(DialogInterface arg0, int arg1) {
                         Intent intent = new Intent(ListBairroActivity.this, CadBairroActivity.class);
                         CadBairroActivity.tagForm = TagForm.A;
                         CadBairroActivity.bairro = bairro;
@@ -55,8 +54,7 @@ public class ListBairroActivity extends AppCompatActivity {
                 });
 
                 builder.setNeutralButton("Excluir".toString(), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface arg0, int agr1) {
+                    public void onClick(DialogInterface arg0, int arg1) {
                         bairroRepository.remover(bairro);
                         atualiza();
                     }
@@ -93,6 +91,12 @@ public class ListBairroActivity extends AppCompatActivity {
         lvBairros = findViewById(R.id.lvBairros);
         ArrayAdapter ad = new BairroAdapter(this, R.layout.lista_bairros, bairros);
         lvBairros.setAdapter(ad);
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        atualiza();
     }
 
 

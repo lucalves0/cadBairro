@@ -36,13 +36,12 @@
         <LinearLayout
             android:layout_width="377dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"/>
 
-            <ListView
-                android:id="@+id/lvBairros"
-                android:layout_width="421dp"
-                android:layout_height="686dp" />
-        </LinearLayout>
+        <ListView
+            android:id="@+id/lvBairros"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

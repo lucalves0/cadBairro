@@ -41,6 +41,4 @@ public class BairroAdapter extends ArrayAdapter {
         return convertView;
     }
 
-
-
 }

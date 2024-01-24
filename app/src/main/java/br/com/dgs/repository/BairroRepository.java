@@ -9,7 +9,8 @@ import br.com.dgs.interfaces.IPadraoRepository;
 import br.com.dgs.model.Bairro;
 import br.com.dgs.utils.Funcoes;
 
-public class BairroRepository implements IPadraoRepository {
+/*
+public stclass BairroRepository implements IPadraoRepository {
     private static final String[] FLD_BAIRRO = {"id", "nome", "uf"};
     public SQLiteDatabase db;
     public static BairroRepository instance = new BairroRepository();
@@ -39,3 +40,4 @@ public class BairroRepository implements IPadraoRepository {
         }
     }
 }
+*/

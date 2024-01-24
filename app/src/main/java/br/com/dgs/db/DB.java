@@ -10,9 +10,9 @@ public class DB extends SQLiteOpenHelper {
     public static final String TBL_BAIRRO = "bairro";
 
     public static final String SCRIPT_TBL_BAIRRO = "create table bairro(" +
-            "id string not null primary key." +
+            "id string not null primary key," +
             "nome text, " +
-            "ut text;";
+            "ut text);";
 
     public DB(Context context){
         super(context, NOME_BANCO, null, 1);

@@ -24,8 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Id : " />
+                android:hint="Id"
+                android:inputType="text" />
         </LinearLayout>
 
         <LinearLayout
@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Nome: " />
+                android:hint="Nome"
+                android:inputType="text" />
         </LinearLayout>
 
         <LinearLayout
@@ -54,8 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:text="Uf: " />
+                android:hint="UF"
+                android:inputType="text" />
         </LinearLayout>
 
         <LinearLayout

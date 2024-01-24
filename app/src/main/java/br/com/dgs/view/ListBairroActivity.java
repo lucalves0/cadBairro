@@ -23,7 +23,7 @@ import br.com.dgs.utils.TagForm;
 
 public class ListBairroActivity extends AppCompatActivity {
 
-    ListView lvBairro;
+    ListView lvBairros;
     Button btnNovo;
     Button btnVoltar;
     BairroRepository bairroRepository;
@@ -35,7 +35,7 @@ public class ListBairroActivity extends AppCompatActivity {
         bairroRepository = BairroRepository.getInstance(this);
         atualiza();
 
-        lvBairro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lvBairros.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Bairro bairro = (Bairro) parent.getItemAtPosition(position);
@@ -90,9 +90,9 @@ public class ListBairroActivity extends AppCompatActivity {
 
     public void atualiza() {
         List<Bairro> bairros = bairroRepository.getAll();
-        lvBairro = findViewById(R.id.lvBairros);
+        lvBairros = findViewById(R.id.lvBairros);
         ArrayAdapter ad = new BairroAdapter(this, R.layout.lista_bairros, bairros);
-        lvBairro.setAdapter(ad);
+        lvBairros.setAdapter(ad);
     }
 
 

@@ -45,8 +45,8 @@ public class CadBairroActivity extends AppCompatActivity {
 
                 Bairro bairro = new Bairro();
                 bairro.setId(edId.getText().toString());
-                bairro.setId(edNome.getText().toString());
-                bairro.setId(edUf.getText().toString());
+                bairro.setNome(edNome.getText().toString());
+                bairro.setUf(edUf.getText().toString());
 
                 BairroRepository bairroRepository = BairroRepository.getInstance(CadBairroActivity.this);
                 if(tagForm == TagForm.I){

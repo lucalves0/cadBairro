@@ -27,7 +27,6 @@ public class ListBairroActivity extends AppCompatActivity {
     Button btnNovo;
     Button btnVoltar;
     BairroRepository bairroRepository;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

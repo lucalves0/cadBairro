@@ -69,7 +69,7 @@ public class CadBairroActivity extends AppCompatActivity {
 
     }
 
-    private void preecheCampos() {
+    public void preecheCampos() {
         edId.setText(String.valueOf(bairro.getId()));
         edNome.setText(bairro.getNome());
         edUf.setText(bairro.getUf());

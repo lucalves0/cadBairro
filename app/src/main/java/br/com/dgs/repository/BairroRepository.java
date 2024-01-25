@@ -38,6 +38,8 @@ public class BairroRepository implements IPadraoRepository {
             ContentValues cv = new ContentValues();
             if (bairro.getId().equals("")) {
                 cv.put("id", Funcoes.getUUID());
+            } else {
+                cv.put("id", bairro.getId());
             }
             cv.put("nome", bairro.getNome());
             cv.put("uf", bairro.getUf());

@@ -12,7 +12,7 @@ public class DB extends SQLiteOpenHelper {
     public static final String SCRIPT_TBL_BAIRRO = "create table bairro(" +
             "id string not null primary key," +
             "nome text, " +
-            "ut text);";
+            "uf text);";
 
     public DB(Context context){
         super(context, NOME_BANCO, null, 1);
